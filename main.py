@@ -1,12 +1,6 @@
 def on_forever():
-    pins.digital_write_pin(DigitalPin.P1, 1)
     led.plot(0, 4)
-    basic.pause(100)
-    pins.digital_write_pin(DigitalPin.P1, 0)
-    led.unplot(0, 4)
-    basic.pause(900)
-    led.plot(0, 4)
-    basic.pause(100)
+    basic.pause(43)
     led.unplot(0, 4)
     led.plot(1, 4)
     led.plot(1, 3)
@@ -39,7 +33,3 @@ def on_forever():
     led.unplot(3, 4)
     basic.pause(600)
 basic.forever(on_forever)
-
-def on_forever2():
-    pass
-basic.forever(on_forever2)

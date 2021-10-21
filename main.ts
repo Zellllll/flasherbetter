@@ -1,8 +1,8 @@
 basic.forever(function () {
     pins.digitalWritePin(DigitalPin.P1, 1)
     led.plot(0, 4)
-    basic.pause(100)
     pins.digitalWritePin(DigitalPin.P1, 0)
+    basic.pause(100)
     led.unplot(0, 4)
     led.plot(1, 4)
     led.plot(1, 3)
